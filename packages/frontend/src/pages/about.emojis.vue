@@ -36,6 +36,18 @@ SPDX-License-Identifier: AGPL-3.0-only
 		</div>
 	</FormSection>
 
+	<div class="query">
+		<MkInput v-model="q" class="" :placeholder="i18n.ts.search" autocapitalize="off">
+			<template #prefix><i class="ti ti-search"></i></template>
+		</MkInput>
+
+		<!-- たくさんあると邪魔
+		<div class="tags">
+			<span class="tag _button" v-for="tag in customEmojiTags" :class="{ active: selectedTags.has(tag) }" @click="toggleTag(tag)">{{ tag }}</span>
+		</div>
+		-->
+	</div>
+
 	<MkFoldableSection v-if="searchEmojis">
 		<template #header>{{ i18n.ts.searchResult }}</template>
 		<div :class="$style.emojis">

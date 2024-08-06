@@ -7,17 +7,6 @@ SPDX-License-Identifier: AGPL-3.0-only
 <div class="_gaps">
 	<MkButton v-if="$i && ($i.isModerator || $i.policies.canManageCustomEmojis)" primary link to="/custom-emojis-manager">{{ i18n.ts.manageCustomEmojis }}</MkButton>
 
-	<div class="query">
-		<MkInput v-model="q" class="" :placeholder="i18n.ts.search" autocapitalize="off">
-			<template #prefix><i class="ti ti-search"></i></template>
-		</MkInput>
-
-		<!-- たくさんあると邪魔
-		<div class="tags">
-			<span class="tag _button" v-for="tag in customEmojiTags" :class="{ active: selectedTags.has(tag) }" @click="toggleTag(tag)">{{ tag }}</span>
-		</div>
-		-->
-	</div>
 	<FormSection>
 		<div class="_gaps_m">
 			<MkKeyValue>
@@ -41,6 +30,18 @@ SPDX-License-Identifier: AGPL-3.0-only
 			<FormLink to="https://cryo.jp/misskey/onsen/LICENSE-2.0.txt" external>Apache License, Version 2.0</FormLink>
 		</div>
 	</FormSection>
+
+	<div class="query">
+		<MkInput v-model="q" class="" :placeholder="i18n.ts.search" autocapitalize="off">
+			<template #prefix><i class="ti ti-search"></i></template>
+		</MkInput>
+
+		<!-- たくさんあると邪魔
+		<div class="tags">
+			<span class="tag _button" v-for="tag in customEmojiTags" :class="{ active: selectedTags.has(tag) }" @click="toggleTag(tag)">{{ tag }}</span>
+		</div>
+		-->
+	</div>
 
 	<MkFoldableSection v-if="searchEmojis">
 		<template #header>{{ i18n.ts.searchResult }}</template>

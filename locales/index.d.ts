@@ -277,15 +277,15 @@ export interface Locale extends ILocale {
      */
     "showLess": string;
     /**
-     * 監視されました
+     * フォローされました
      */
     "youGotNewFollower": string;
     /**
-     * 監視リクエストされました
+     * フォローリクエストされました
      */
     "receiveFollowRequest": string;
     /**
-     * 監視が承認されました
+     * フォローが承認されました
      */
     "followRequestAccepted": string;
     /**
@@ -325,7 +325,7 @@ export interface Locale extends ILocale {
      */
     "driveFileDeleteConfirm": ParameterizedString<"name">;
     /**
-     * {name}の監視を解除しますか？
+     * {name}のフォローを解除しますか？
      */
     "unfollowConfirm": ParameterizedString<"name">;
     /**
@@ -353,15 +353,15 @@ export interface Locale extends ILocale {
      */
     "notes": string;
     /**
-     * 監視
+     * フォロー
      */
     "following": string;
     /**
-     * 監視者
+     * フォロワー
      */
     "followers": string;
     /**
-     * 監視されています
+     * フォローされています
      */
     "followsYou": string;
     /**
@@ -409,7 +409,7 @@ export interface Locale extends ILocale {
      */
     "privacy": string;
     /**
-     * 監視を承認制にする
+     * フォローを承認制にする
      */
     "makeFollowManuallyApprove": string;
     /**
@@ -417,23 +417,23 @@ export interface Locale extends ILocale {
      */
     "defaultNoteVisibility": string;
     /**
-     * 監視
+     * フォロー
      */
     "follow": string;
     /**
-     * 監視申請
+     * フォロー申請
      */
     "followRequest": string;
     /**
-     * 監視申請
+     * フォロー申請
      */
     "followRequests": string;
     /**
-     * 監視解除
+     * フォロー解除
      */
     "unfollow": string;
     /**
-     * 監視許可待ち
+     * フォロー許可待ち
      */
     "followRequestPending": string;
     /**
@@ -725,7 +725,7 @@ export interface Locale extends ILocale {
      */
     "flagShowTimelineRepliesDescription": string;
     /**
-     * 監視中ユーザーからの監視リクを自動承認
+     * フォロー中ユーザーからのフォロリクを自動承認
      */
     "autoAcceptFollowed": string;
     /**
@@ -785,7 +785,7 @@ export interface Locale extends ILocale {
      */
     "youHaveNoLists": string;
     /**
-     * {name}を監視しますか？
+     * {name}をフォローしますか？
      */
     "followConfirm": ParameterizedString<"name">;
     /**
@@ -2121,7 +2121,7 @@ export interface Locale extends ILocale {
      */
     "limitTo": ParameterizedString<"x">;
     /**
-     * 監視申請はありません
+     * フォロー申請はありません
      */
     "noFollowRequests": string;
     /**
@@ -2273,7 +2273,7 @@ export interface Locale extends ILocale {
      */
     "showFixedPostFormInChannel": string;
     /**
-     * 監視する際、デフォルトで返信をTLに含むようにする
+     * フォローする際、デフォルトで返信をTLに含むようにする
      */
     "withRepliesByDefaultForNewlyFollowed": string;
     /**
@@ -2969,11 +2969,11 @@ export interface Locale extends ILocale {
      */
     "renotedCount": string;
     /**
-     * 監視数
+     * フォロー数
      */
     "followingCount": string;
     /**
-     * 監視者数
+     * フォロワー数
      */
     "followersCount": string;
     /**
@@ -3017,7 +3017,7 @@ export interface Locale extends ILocale {
      */
     "noCrawleDescription": string;
     /**
-     * 監視を承認制にしても、ノートの公開範囲を「監視者」にしない限り、誰でもあなたのノートを見ることができます。
+     * フォローを承認制にしても、ノートの公開範囲を「フォロワー」にしない限り、誰でもあなたのノートを見ることができます。
      */
     "lockedAccountInfo": string;
     /**
@@ -3585,11 +3585,11 @@ export interface Locale extends ILocale {
      */
     "unresolved": string;
     /**
-     * 被監視を解除
+     * フォロワーを解除
      */
     "breakFollow": string;
     /**
-     * 被監視解除しますか？
+     * フォロワー解除しますか？
      */
     "breakFollowConfirm": string;
     /**
@@ -3649,11 +3649,11 @@ export interface Locale extends ILocale {
      */
     "unmuteThread": string;
     /**
-     * 監視の公開範囲
+     * フォローの公開範囲
      */
     "followingVisibility": string;
     /**
-     * 監視者の公開範囲
+     * フォロワーの公開範囲
      */
     "followersVisibility": string;
     /**
@@ -4493,7 +4493,7 @@ export interface Locale extends ILocale {
      */
     "initialAccountSetting": string;
     /**
-     * 監視中
+     * フォロー中
      */
     "youFollowing": string;
     /**
@@ -4753,11 +4753,11 @@ export interface Locale extends ILocale {
      */
     "notificationRecieveConfig": string;
     /**
-     * 相互監視
+     * 相互フォロー
      */
     "mutualFollow": string;
     /**
-     * 監視中または監視者
+     * フォロー中またはフォロワー
      */
     "followingOrFollower": string;
     /**
@@ -4773,19 +4773,19 @@ export interface Locale extends ILocale {
      */
     "hideRepliesToOthersInTimeline": string;
     /**
-     * TLに現在監視中の人全員の返信を含めるようにする
+     * TLに現在フォロー中の人全員の返信を含めるようにする
      */
     "showRepliesToOthersInTimelineAll": string;
     /**
-     * TLに現在監視中の人全員の返信を含めないようにする
+     * TLに現在フォロー中の人全員の返信を含めないようにする
      */
     "hideRepliesToOthersInTimelineAll": string;
     /**
-     * この操作は元に戻せません。本当にTLに現在監視中の人全員の返信を含めるようにしますか？
+     * この操作は元に戻せません。本当にTLに現在フォロー中の人全員の返信を含めるようにしますか？
      */
     "confirmShowRepliesAll": string;
     /**
-     * この操作は元に戻せません。本当にTLに現在監視中の人全員の返信を含めないようにしますか？
+     * この操作は元に戻せません。本当にTLに現在フォロー中の人全員の返信を含めないようにしますか？
      */
     "confirmHideRepliesAll": string;
     /**
@@ -5041,7 +5041,7 @@ export interface Locale extends ILocale {
      */
     "noDescription": string;
     /**
-     * 監視の際常に確認する
+     * フォローの際常に確認する
      */
     "alwaysConfirmFollow": string;
     /**
@@ -5234,7 +5234,7 @@ export interface Locale extends ILocale {
          */
         "youCanEditMoreSettingsInSettingsPageLater": string;
         /**
-         * タイムラインを構築するため、気になるユーザーを監視してみましょう。
+         * タイムラインを構築するため、気になるユーザーをフォローしてみましょう。
          */
         "followUsers": string;
         /**
@@ -5355,7 +5355,7 @@ export interface Locale extends ILocale {
              */
             "description1": string;
             /**
-             * あなたが監視しているアカウントの投稿を見られます。
+             * あなたがフォローしているアカウントの投稿を見られます。
              */
             "home": string;
             /**
@@ -5398,11 +5398,11 @@ export interface Locale extends ILocale {
                  */
                 "public": string;
                 /**
-                 * ホームタイムラインのみに公開。監視者・プロフィールを見に来た人・リノートから、他のユーザーも見ることができます。
+                 * ホームタイムラインのみに公開。フォロワー・プロフィールを見に来た人・リノートから、他のユーザーも見ることができます。
                  */
                 "home": string;
                 /**
-                 * 監視者にのみ公開。本人以外がリノートすることはできず、また監視者以外は閲覧できません。
+                 * フォロワーにのみ公開。本人以外がリノートすることはできず、またフォロワー以外は閲覧できません。
                  */
                 "followers": string;
                 /**
@@ -5492,7 +5492,7 @@ export interface Locale extends ILocale {
     };
     "_timelineDescription": {
         /**
-         * ホームタイムラインでは、あなたが監視しているアカウントの投稿を見られます。
+         * ホームタイムラインでは、あなたがフォローしているアカウントの投稿を見られます。
          */
         "home": string;
         /**
@@ -6880,7 +6880,7 @@ export interface Locale extends ILocale {
          */
         "public": string;
         /**
-         * 監視者だけに公開
+         * フォロワーだけに公開
          */
         "followers": string;
         /**
@@ -8224,7 +8224,7 @@ export interface Locale extends ILocale {
          */
         "all": string;
         /**
-         * 監視しているユーザーのノート
+         * フォローしているユーザーのノート
          */
         "homeTimeline": string;
         /**
@@ -8512,11 +8512,11 @@ export interface Locale extends ILocale {
          */
         "homeDescription": string;
         /**
-         * 監視者
+         * フォロワー
          */
         "followers": string;
         /**
-         * 自分の監視者のみに公開
+         * 自分のフォロワーのみに公開
          */
         "followersDescription": string;
         /**
@@ -9086,15 +9086,15 @@ export interface Locale extends ILocale {
          */
         "youRenoted": ParameterizedString<"name">;
         /**
-         * 監視されました
+         * フォローされました
          */
         "youWereFollowed": string;
         /**
-         * 監視リクエストが来ました
+         * フォローリクエストが来ました
          */
         "youReceivedFollowRequest": string;
         /**
-         * 監視リクエストが承認されました
+         * フォローリクエストが承認されました
          */
         "yourFollowRequestAccepted": string;
         /**
@@ -9150,7 +9150,7 @@ export interface Locale extends ILocale {
          */
         "renotedBySomeUsers": ParameterizedString<"n">;
         /**
-         * {n}人に監視されました
+         * {n}人にフォローされました
          */
         "followedBySomeUsers": ParameterizedString<"n">;
         /**
@@ -9167,7 +9167,7 @@ export interface Locale extends ILocale {
              */
             "note": string;
             /**
-             * 監視
+             * フォロー
              */
             "follow": string;
             /**
@@ -9195,11 +9195,11 @@ export interface Locale extends ILocale {
              */
             "pollEnded": string;
             /**
-             * 監視申請を受け取った
+             * フォロー申請を受け取った
              */
             "receiveFollowRequest": string;
             /**
-             * 監視が受理された
+             * フォローが受理された
              */
             "followRequestAccepted": string;
             /**
@@ -9217,7 +9217,7 @@ export interface Locale extends ILocale {
         };
         "_actions": {
             /**
-             * 監視バック
+             * フォローバック
              */
             "followBack": string;
             /**

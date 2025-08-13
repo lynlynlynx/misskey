@@ -4,7 +4,7 @@ SPDX-License-Identifier: AGPL-3.0-only
 -->
 
 <template>
-<MkPagination :paginator="paginator" :autoLoad="autoLoad" :pullToRefresh="pullToRefresh" :withControl="withControl">
+<MkPagination :paginator="paginator" :autoLoad="autoLoad" :pullToRefresh="pullToRefresh">
 	<template #empty><MkResult type="empty" :text="i18n.ts.noNotes"/></template>
 
 	<template #default="{ items: notes }">
